@@ -1,1 +1,17 @@
-cp /var/www/html/src/config.env /var/www/.env
+## How to build a project
+
+1 - Clone the project `git clone`
+2 - cd blog-app
+3 - Copy `.env.example` to `.env`
+4 - Install [composer] and run the command in the project `composer install`
+5 - default `php-8.1` php -v ,and config in Dockerfile your php-version ( LINE 1,14 )
+6 - Run docker `docker-compose up -d --build`
+7 - Open `Project` url `http://localhost/`
+8 - Open `phpMyAdmin` url `http://localhost:8080/` and dump `blogs.sql`
+9 - Congratulations! You have assembled the project! Enjoy using it!
+
+`View`
+http://localhost/
+
+`phpMyAdmin`
+http://localhost:8080/
