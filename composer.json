@@ -1,0 +1,25 @@
+{
+  "require": {
+    "guzzlehttp/psr7": "^2.6",
+    "php-http/message": "^1.16",
+    "vlucas/phpdotenv": "^5.4",
+    "guzzlehttp/guzzle": "^7.2",
+    "tymon/jwt-auth": "^2.1",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "App/",
+      "App\\Classes\\": "App/Auth/",
+      "View\\": "view/",
+      "DB\\" : "config/"
+    },
+    "files": ["config/helper.php"]
+
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
